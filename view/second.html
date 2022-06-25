@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>目录</title>
+<link rel="stylesheet" type="text/css" href="css/Index.css" />
+<link rel="stylesheet" type="text/css" href="css/style.css" />
+<style>
+body{
+background-color:black;
+padding:0;margin:0;}
+.bg{
+	  display: flex;
+  justify-content: center; 
+  position:absolute;
+  left:0;
+  right:0;
+  bottom:0;
+  top:0;
+  
+  
+    background: url(../images/第一帧.jpg)  center no-repeat;
+}
+
+.video{
+height:100%
+}
+.enlarge{
+	position:absolute;
+    width: 130px;
+    height: 200px;
+
+}
+
+.enlarge img{
+    width: 100%;
+    height: 100%;
+    cursor: pointer;
+    transition: all 0.6s;
+    -ms-transition: all 0.8s;
+    
+}
+
+.enlarge img:hover{
+    transform: scale(1.2);
+    -ms-transform: scale(1.2);
+}
+#message{
+    top:40px;
+	left:400px;
+
+}
+#honour{
+	top:100px;
+	right:350px;
+}
+#contact{
+	bottom:100px;
+	left:490px;
+}
+#continue{
+	right:320px;
+	bottom:70px;
+}
+</style>
+</head>
+<body>
+<div class="bg">
+<video class="video"  autoplay muted  poster="../images/第一帧.jpg" id="12">
+		 <source src="../images/second_Trim_Trim.mp4" type="video/mp4">
+</video>
+
+<a href="message.html" class="enlarge" id="message" style="visibility:visible">
+	<img src="../images/message.png">
+</a>
+</div>
+<div>
+<a href="honour.html" class="enlarge" id="honour" style="visibility:visible">
+	<img src="../images/honour.png">
+</a>
+
+</div>
+<div>
+<a href="contact.html" class="enlarge" id="contact" style="visibility:visible">
+	<img src="../images/contact.png">
+</a>
+</div>
+<div>
+<a href="continue.html" class="enlarge" id="continue" style="visibility:visible">
+	<img src="../images/continue.png">
+</a>
+</div>
+div.innerHTML = <embed src="../images/gaoshan.mp3"  width="0" height="0" loop=“-1” autostart="True"></embed>
+</body>
+</html>

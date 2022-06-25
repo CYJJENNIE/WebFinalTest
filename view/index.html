@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>个人网站</title>
+<link rel="stylesheet" type="text/css" href="css/Index.css" />
+
+
+<style>
+body{
+background-color:black;
+padding:0;margin:0;}
+.bg{
+	  display: flex;
+  justify-content: center;
+  
+  position:absolute;
+  left:0;
+  right:0;
+  bottom:0;
+  top:0;
+  
+  
+    background: url(../images/第一帧.jpg)  center no-repeat;
+}
+.video{
+height:100%
+}
+.turn{
+	position:fixed;
+	text-align:center;
+	 bottom:100px;
+	 text-decoration:none;
+	 font{
+	  	color:#7d8b8d;
+	  	face:"STKaiti";
+	 }
+	
+
+}
+
+
+</style>
+</head>
+<body>
+<div class="bg">
+<video width="1500" controls>
+
+  <source src="../images/index3.mp4" type="video/mp4">
+
+  <source src="../images/index3.ogg" type="video/ogg">
+
+</video>
+<script type="text/javascript">
+setTimeout("delay.style.visibility='visible'",6000);
+</script>
+<a href="second.html" id=delay class="turn" style="visibility:hidden"> <font color="#7d8b8d" face="STKaiti" size="5">
+    	点此了解
+    </font>
+</a> 
+</div>
+
+
+</body>
+</html>
